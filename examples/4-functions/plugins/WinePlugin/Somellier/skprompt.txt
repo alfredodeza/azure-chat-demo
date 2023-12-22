@@ -1,0 +1,2 @@
+Generate 3 potential dishes for pairing the given wine. The wine can be a distinct grape, a type of wine like red, white, or bubbly. Sometimes the given wine description might not be super accurate, so make sure you always suggest dishes regardless.
+Wine:{{$input}}
