@@ -2,7 +2,6 @@ from dotenv import load_dotenv
 import os
 import semantic_kernel as sk
 from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion
-import os
 from semantic_kernel.skill_definition import sk_function, sk_function_context_parameter
 from semantic_kernel.orchestration.sk_context import SKContext
 from semantic_kernel.planning.basic_planner import BasicPlanner
