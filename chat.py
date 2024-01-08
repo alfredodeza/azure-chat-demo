@@ -95,16 +95,12 @@ async def main():
     if context.error_occurred:
         print(f"Error occurred: {context.last_error_description}")
         return
-    #import ipdb; ipdb.set_trace()
-    #if function_call := context.pop_function_call():
-    #    print(f"Function to be called: {function_call.name}")
-    #    print(f"Function parameters: \n{function_call.arguments}")
-    #    return
+
     chat_function._chat_prompt_template.messages.append({"role": "assistant", "content": "It is 85 degrees in Seattle in June"})
     context = await chat_function.invoke_async(context=context, functions=functions)
     print("No function was called")
     print(f"Output was: {str(context)}")
-    #import ipdb; ipdb.set_trace()
+
 
 # Run the main function
 if __name__ == "__main__":
